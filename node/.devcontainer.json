@@ -1,0 +1,18 @@
+{
+   "dockerFile": "../../docker/node/Dockerfile",
+   "forwardPorts": [
+      8080
+   ],
+   "mounts": [
+      "target=${containerWorkspaceFolder}/node_modules,type=volume"
+   ],
+   "extensions": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+   ],
+   "containerEnv": {
+      "NODE_ENV": "local"
+   },
+   "remoteUser":"node",
+   "postCreateCommand": "echo node | sudo -S chown node ${containerWorkspaceFolder}/node_modules"
+}
