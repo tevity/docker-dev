@@ -1,5 +1,5 @@
 {
-   "dockerFile": "../../docker/node/Dockerfile",
+   "image": "tevity/dev:latest",
    "forwardPorts": [
       8080
    ],
@@ -8,7 +8,9 @@
    ],
    "extensions": [
       "esbenp.prettier-vscode",
-      "dbaeumer.vscode-eslint"
+      "dbaeumer.vscode-eslint",
+	  "ms-azuretools.vscode-docker",
+	  "redhat.vscode-yaml"
    ],
    "containerEnv": {
       "NODE_ENV": "local"
