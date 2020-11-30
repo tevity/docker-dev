@@ -1,0 +1,20 @@
+{
+   "image": "tevity/dev:node-10",
+   "forwardPorts": [
+      8080
+   ],
+   "mounts": [
+      "target=${containerWorkspaceFolder}/node_modules,type=volume"
+   ],
+   "extensions": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+	  "ms-azuretools.vscode-docker",
+	  "redhat.vscode-yaml"
+   ],
+   "containerEnv": {
+      "NODE_ENV": "local"
+   },
+   "remoteUser":"node",
+   "postCreateCommand": "echo node | sudo -S chown node ${containerWorkspaceFolder}/node_modules"
+}
