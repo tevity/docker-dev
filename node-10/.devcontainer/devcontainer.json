@@ -9,8 +9,8 @@
    "extensions": [
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
-	  "ms-azuretools.vscode-docker",
-	  "redhat.vscode-yaml"
+      "ms-azuretools.vscode-docker",
+      "redhat.vscode-yaml"
    ],
    "containerEnv": {
       "NODE_ENV": "local"
