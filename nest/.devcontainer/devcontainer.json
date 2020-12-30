@@ -10,7 +10,10 @@
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
       "ms-azuretools.vscode-docker",
-      "redhat.vscode-yaml"
+      "redhat.vscode-yaml",
+      "streetsidesoftware.code-spell-checker",
+      "eamodio.gitlens",
+      "oderwat.indent-rainbow"
    ],
    "containerEnv": {
       "NODE_ENV": "local"
