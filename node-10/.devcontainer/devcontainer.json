@@ -5,13 +5,13 @@
    ],
    "mounts": [
       "target=${containerWorkspaceFolder}/node_modules,type=volume",
-      "source=~/dev/bcb/gcloud-auth,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
+      "source=~/dev/bcb/gcloud-auth,target=/home/node/.config/gcloud,type=bind,consistency=cached"
    ],
    "extensions": [
-      "esbenp.prettier-vscode",
-      "dbaeumer.vscode-eslint",
-      "ms-azuretools.vscode-docker",
-      "redhat.vscode-yaml",
+      "esbenp.prettier-node",
+      "dbaeumer.node-eslint",
+      "ms-azuretools.node-docker",
+      "redhat.node-yaml",
       "streetsidesoftware.code-spell-checker",
       "eamodio.gitlens",
       "oderwat.indent-rainbow"
@@ -19,6 +19,6 @@
    "containerEnv": {
       "NODE_ENV": "local"
    },
-   "remoteUser":"vscode",
-   "postCreateCommand": "echo vscode | sudo -S chown vscode ${containerWorkspaceFolder} -R"
+   "remoteUser":"node",
+   "postCreateCommand": "echo node | sudo -S chown node ${containerWorkspaceFolder} -R"
 }

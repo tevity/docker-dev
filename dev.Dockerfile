@@ -1,12 +1,8 @@
 FROM node:latest
 
-ARG USERNAME=vscode
-ARG USER_UID=1234
-ARG USER_GID=$USER_UID
+ARG USERNAME=node
 
-RUN groupadd --gid $USER_GID $USERNAME \
-   && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-   && echo "$USERNAME:$USERNAME" | chpasswd  \
+RUN echo "$USERNAME:$USERNAME" | chpasswd  \
    && mkdir /home/$USERNAME/.npm-global \
    && chown $USERNAME /home/$USERNAME/.npm-global \
    && mkdir /home/$USERNAME/.npm-global/lib \
