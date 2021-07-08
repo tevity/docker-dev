@@ -4,7 +4,8 @@
       8080
    ],
    "mounts": [
-      "target=${containerWorkspaceFolder}/node_modules,type=volume"
+      "target=${containerWorkspaceFolder}/node_modules,type=volume",
+      "source=~/dev/bcb/gcloud-auth,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
    ],
    "extensions": [
       "esbenp.prettier-vscode",
@@ -18,6 +19,6 @@
    "containerEnv": {
       "NODE_ENV": "local"
    },
-	"remoteUser": "node",
-   "postCreateCommand": "echo node | sudo -S chown node ${containerWorkspaceFolder}/node_modules"
+	"remoteUser": "vscode",
+   "postCreateCommand": "echo vscode | sudo -S chown vscode ${containerWorkspaceFolder} -R"
 }
