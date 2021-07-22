@@ -1,5 +1,8 @@
 FROM tevity/dev:latest
 
+ENV PUBSUB_PROJECT_ID=bcb-staging-project
+ENV PUBSUB_EMULATOR_HOST=host.docker.internal:8085
+
 RUN apt-get update && \
       apt-get install -y apt-transport-https ca-certificates gnupg
 
