@@ -7,7 +7,7 @@
       "target=${containerWorkspaceFolder}/node_modules,type=volume"
    ],
    "extensions": [
-      "esbenp.prettier-node",
+      "esbenp.prettier-vscode",
       "dbaeumer.node-eslint",
       "ms-azuretools.node-docker",
       "redhat.node-yaml",

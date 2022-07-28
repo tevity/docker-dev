@@ -8,7 +8,7 @@
       "source=/home/kgurton/dev/bcb/gcloud-auth,target=/home/node/.config/gcloud,type=bind,consistency=cached"
    ],
    "extensions": [
-      "esbenp.prettier-node",
+      "esbenp.prettier-vscode",
       "dbaeumer.node-eslint",
       "ms-azuretools.node-docker",
       "redhat.node-yaml",
