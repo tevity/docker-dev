@@ -1,5 +1,5 @@
 {
-   "image": "tevity/dev:angular-latest",
+   "image": "tevity/angular-dev:latest",
    "forwardPorts": [
       4200
    ],

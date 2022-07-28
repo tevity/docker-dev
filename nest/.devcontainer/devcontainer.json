@@ -1,5 +1,5 @@
 {
-   "image": "tevity/dev:nest-latest",
+   "image": "tevity/nest-dev:latest",
    "forwardPorts": [
       8080
    ],
