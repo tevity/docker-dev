@@ -15,4 +15,6 @@ RUN apt-get update && \
       apt-get install -y sudo git
 RUN adduser $USERNAME sudo
 
+RUN npm i -g npm-check-updates
+
 ENTRYPOINT sh
