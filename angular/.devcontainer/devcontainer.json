@@ -13,7 +13,8 @@
       "redhat.node-yaml",
       "streetsidesoftware.code-spell-checker",
       "eamodio.gitlens",
-      "oderwat.indent-rainbow"
+      "oderwat.indent-rainbow",
+      "angular.ng-template"
    ],
    "containerEnv": {
       "NODE_ENV": "local"
