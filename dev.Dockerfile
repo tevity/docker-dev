@@ -11,13 +11,12 @@ RUN echo "$USERNAME:$USERNAME" | chpasswd  \
 ENV NPM_CONFIG_PREFIX=/home/$USERNAME/.npm-global
 ENV PATH=$PATH:/home/$USERNAME/.npm-global/bin
 
-ENV NPM_TOKEN=glpat-NPNrrXJvLXcF_z5NL-RM
-ENV CI_JOB_TOKEN=glpat-NPNrrXJvLXcF_z5NL-RM
-
 RUN apt-get update && \
-      apt-get install -y sudo git
+apt-get install -y sudo git
 RUN adduser $USERNAME sudo
 
 RUN npm i -g npm-check-updates
+
+ENV CI_JOB_TOKEN=glpat-q2XgyjEjHVMdsG2uL4eF
 
 ENTRYPOINT sh
