@@ -6,19 +6,23 @@
    "mounts": [
       "target=${containerWorkspaceFolder}/node_modules,type=volume"
    ],
-   "extensions": [
-      "esbenp.prettier-vscode",
-      "dbaeumer.node-eslint",
-      "ms-azuretools.node-docker",
-      "redhat.node-yaml",
-      "streetsidesoftware.code-spell-checker",
-      "eamodio.gitlens",
-      "oderwat.indent-rainbow",
-      "angular.ng-template"
-   ],
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "esbenp.prettier-vscode",
+            "dbaeumer.node-eslint",
+            "ms-azuretools.node-docker",
+            "redhat.node-yaml",
+            "streetsidesoftware.code-spell-checker",
+            "eamodio.gitlens",
+            "oderwat.indent-rainbow",
+            "angular.ng-template"
+      ]}
+   },
    "containerEnv": {
       "NODE_ENV": "local"
    },
-   "remoteUser": "node",
-   "postCreateCommand": "echo node | sudo -S chown node ${containerWorkspaceFolder} -R"
+   "runArgs": [
+    "--network=host",
+]
 }
