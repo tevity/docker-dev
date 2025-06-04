@@ -17,6 +17,6 @@ RUN adduser $USERNAME sudo
 
 RUN npm i -g npm-check-updates
 
-ENV CI_JOB_TOKEN=glpat-q2XgyjEjHVMdsG2uL4eF
+ENV CI_JOB_TOKEN=...
 
 ENTRYPOINT sh

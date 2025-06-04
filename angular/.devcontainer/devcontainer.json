@@ -1,8 +1,5 @@
 {
    "image": "tevity/angular-dev:latest",
-   "forwardPorts": [
-      4200
-   ],
    "mounts": [
       "target=${containerWorkspaceFolder}/node_modules,type=volume"
    ],
@@ -21,8 +18,5 @@
    },
    "containerEnv": {
       "NODE_ENV": "local"
-   },
-   "runArgs": [
-    "--network=host",
-]
+   }
 }

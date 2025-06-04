@@ -1,7 +1,8 @@
 {
    "image": "tevity/dev:latest",
    "mounts": [
-      "target=${containerWorkspaceFolder}/node_modules,type=volume"
+      "target=${containerWorkspaceFolder}/node_modules,type=volume",
+      "source=~/.config/gcloud,target=/root/.config/gcloud,type=bind,consistency=cached"
    ],
    "customizations": {
       "vscode": {
@@ -18,8 +19,5 @@
    },
    "containerEnv": {
       "NODE_ENV": "local"
-   },
-   "runArgs": [
-    "--network=host",
-]
+   }
 }
